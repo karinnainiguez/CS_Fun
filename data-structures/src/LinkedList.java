@@ -5,7 +5,11 @@ public class LinkedList<X> {
 		System.out.println("IT'S WORKING");
 	}
 	
-	public LinkedList() {}
+	private Node head;
+	
+	public LinkedList() {
+		head = null;
+	}
 	
 	
 	private class Node {
