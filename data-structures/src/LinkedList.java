@@ -49,10 +49,11 @@ public class LinkedList<X> {
 	public X valueAt(int n) {
 		int count = 0;
 		Node current = head;
-		while(current != null) {
+		while(count != n) {
 			count += 1;
 			current = current.nextNode;
 		}
+		return current.data;
 	}
 	
 	// MAX VALUE IN THE LINKED LIST RETURNS DATA VALUE, NOT NODE
