@@ -108,7 +108,7 @@ public class LinkedList<X> {
 	public X valueAt(int n) {
 		int count = 0;
 		Node current = head;
-		while(count != n) {
+		while (count != n) {
 			count += 1;
 			current = current.nextNode;
 		}
@@ -116,8 +116,26 @@ public class LinkedList<X> {
 	}
 	
 	
-	// 7. INSERT A NEW NODE WITH SPECIFIC DATA 
-	// ASSUMING LIST IS SORTED BY ASCENDING VALUES
+//	// 7. INSERT A NEW NODE WITH SPECIFIC DATA 
+//	// ASSUMING LIST IS SORTED BY ASCENDING VALUES
+//	// (NOT applicable with Java X Data)
+//	public void insert(X data) {
+//		if (head == null) {
+//			head = new Node(data);
+//		} else {
+//			Node current = head;
+//			while (current.nextNode != null && current.nextNode < data) {
+//				current = current.nextNode;
+//			}
+//			if(current.nextNode == null) {
+//				current.nextNode = new Node(data);
+//			} else {
+//				Node newNode = new Node(data);
+//				newNode.setNextNode(current.nextNode);
+//				current.nextNode = newNode;
+//			}
+//		}
+//	}
 	
 	
 	
