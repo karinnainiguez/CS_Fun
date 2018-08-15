@@ -140,6 +140,12 @@ public class LinkedList<X> {
 	
 	
 	// 8. PRINT VALUE OF EACH NODE SEPARATED BY SPACE
+	public void printVals() {
+		Node current = head;
+		while (current != null) {
+			System.out.println(current.data + " ");
+		}
+	}
 	
 	// 9. DELETE FIRST NODE FOUND WITH SPECIFIC DATA
 	
